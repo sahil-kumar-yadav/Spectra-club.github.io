@@ -1,2 +1,2 @@
-# Specra-club
+# Spectra-club
 This Repository contains files of Spectra club
