@@ -19,6 +19,23 @@ nav a:hover {
 }
 
 
+/* for sticky navigation bar  */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #333; /* Change the background color as needed */
+}
+
+/* Adjust padding for the content below the sticky navigation bar */
+.content {
+  padding-top: 80px; /* Adjust the value based on the height of your navigation bar */
+}
+
+
+
+
 .hero-container {
   background: linear-gradient(45deg, #3498db, #e74c3c);
   position: relative;
