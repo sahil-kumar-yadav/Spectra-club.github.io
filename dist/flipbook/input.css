@@ -43,3 +43,38 @@
       ::-webkit-scrollbar-thumb:hover {
         background: linear-gradient(transparent, #09ff4b);
       }
+/* loading animation  */
+     /* ... (no changes here) ... */
+/* ... (no changes here) ... */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @keyframes spectraAnimation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes rainbow {
+    0% { color: #ff0000; }
+    16.666% { color: #ff8000; }
+    33.333% { color: #ffff00; }
+    50% { color: #80ff00; }
+    66.666% { color: #00ff80; }
+    83.333% { color: #0080ff; }
+    100% { color: #8000ff; }
+  }
+  
+  .spectra-letter {
+    animation-fill-mode: both;
+  }
+  
+  /* ... (no changes here) ... */
+  

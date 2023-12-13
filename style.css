@@ -540,43 +540,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.block {
-  display: block;
-}
-
-.flex {
-  display: flex;
-}
-
-.hidden {
-  display: none;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 /* Additional styles for the navigation bar */
 
 nav {
