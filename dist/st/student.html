@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="folders.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resources</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .folder {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 8px;
+        }
+
+        .folder svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            fill: #f39c12; /* Yellow color */
+        }
+
+        .folder span {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .items {
+            margin-left: 30px;
+            display: none;
+        }
+
+        .items div {
+            margin-bottom: 4px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="folder" onclick="toggleItems('folder1')">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span>Contol System</span>
+    </div>
+    <div class="items" id="folder1">
+        <div><a href="../books/flipbook.html">sample pdf</a></div>
+        <div>Item 2 NA</div>
+        <div>Item 3 NA</div>
+    </div>
+
+    <div class="folder" onclick="toggleItems('folder2')">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span>Digital Electronics</span>
+    </div>
+    <div class="items" id="folder2">
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+    <div class="folder" onclick="toggleItems('folder3')">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span>NTS</span>
+    </div>
+    <div class="items" id="folder3">
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+    <div class="folder" onclick="toggleItems('folder4')">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span>Folder 4</span>
+    </div>
+    <div class="items" id="folder4">
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+</div>
+
+<script>
+    function toggleItems(folderId) {
+        const items = document.getElementById(folderId);
+        items.style.display = items.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>
